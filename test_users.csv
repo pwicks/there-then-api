@@ -1,0 +1,15 @@
+9b11c4d2-1ca1-48f4-8ecf-630f1daca133, Test, User, True, test@example.com
+5bca6ebc-5db6-4abd-b9f4-d9396309012f, Test, User, True, test2@example.com
+d0642bf1-80e7-4686-81aa-f55c2377ef3e, Geo, Tester, True, geo_test_1755105147@example.com
+fb79fd42-12b5-4fe8-b7ed-9ee1dd1be5bc, Paul, Wicks, True, pwicks@ix.netcom.com
+40c0a9ae-8f16-4972-a019-d66563c4c56d, Paul, Wicks, True, paul.william.wicks@gmail.com
+8e95f985-58ed-40c2-a388-58772074cea8, Celest, Wicks, True, celeste.m.wicks@gmail.com
+e17d4c2e-811e-4a4b-be17-b505b4cd175f, Norman, Conquest, True, paul.william.wicks+norm@gmail.com
+8e4ee03b-ef74-421d-a8db-3dcd576efb12, Norman, Conquest, True, paul.william.wicks+norman@gmail.com
+d45aa6c7-0ea9-4da4-9b08-d9864e8c49bc, Amanda, Huggenkis, True, 
+4aeef33d-745a-498f-be7b-1ffc94424fbd, Sarendip, itty, True, admin@therethen.com
+
+
+curl -X POST http://localhost:8000/api/token/ \
+  -H "Content-Type: application/json" \
+  -d '{"email": "paul.william.wicks+test1@gmail.com", "password": "password123"}'
